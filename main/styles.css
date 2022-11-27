@@ -1,0 +1,178 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../assets/bckgrd_large.png");
+  background-repeat: repeat-x;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+  background-size: cover;
+  
+  overflow: hidden;
+  animation: move 30s linear alternate infinite;
+}
+
+@keyframes move {
+	100% {background-position: 100%;}
+}
+
+h1 {
+  text-align: center;
+  animation: 4s anim-lineUp ease-out 1;
+  margin-top: 0;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+button {
+  display: grid;
+  margin: auto;
+  padding: 0;
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  border-style: solid;
+  border-width: thick;
+  border-color: #2F5232;
+  background-color: burlywood;
+  box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2),
+			    inset 0px -5px 0px 0px rgba(0,0,0,0.3),
+				inset 0px 2px 0px 0px rgba(255,255,255,0.5);
+  -webkit-border-radius: 30%;
+  -moz-border-radius: 30%;
+  cursor: pointer;
+  animation: 6s anim-lineUp ease-out 1;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+.buttons {
+	display: flex;
+	margin: auto;
+	padding: 0;
+	width: 60%;
+	height: 30%;
+	min-width: 500px;
+	max-height 200px;
+}
+
+img {
+	margin: auto;
+}
+
+footer {
+	position:absolute;
+	left: 0%;
+	top: 95%;
+	margin-bottom: 0;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	opacity: 0.7;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	
+}
+
+/* iPad 3 (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio : 2),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (min-resolution: 192dpi) { 
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	
+}
+
+/* Retina displays ----------- */
+@media  only screen 
+and (-webkit-min-device-pixel-ratio : 2), 
+only screen 
+and (min-resolution: 192dpi) {
+
+}
+
+<picture> 
+  <!-- Default low resolution image -->
+  <source srcset="small.jpg" type="image/jpg">
+  
+  <!-- Medium resolution image -->
+  <source srcset="medium.jpg" media="(min-width: 768px)">
+  
+  <!--High resolution Image -->
+  <source srcset="large.jpg" media="(min-width: 1200px)">
+  
+  <!-- Fallback image incase the picture element is not supported --> 
+  <img src="small.jpg" alt="description of image"> 
+</picture>
